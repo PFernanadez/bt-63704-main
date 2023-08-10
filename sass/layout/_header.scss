@@ -30,7 +30,10 @@
 /* ------------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
+    background-color: #333;
+    width: 100%;  
+    margin: 0 auto;
+    
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
@@ -46,15 +49,24 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
     }
 
     &__nav-link {
         display: block;
-        background-color: purple;
         color: #fff;
         padding: 1em 2em;
         text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.2s;
+    }
+
+    &__nav-link:hover {
+        background-color: goldenrod;
+        box-shadow: 0px 0px 5px goldenrod;
+        transform: scale(1.2);
+        color: #222;
     }
 
     @media (max-width: 768px) {
@@ -70,7 +82,7 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: olivedrab;
+
     display: flex;
     justify-content: space-between;
 
@@ -84,7 +96,7 @@
     }
 
     &__form-container {
-        background-color: gold;
+
         display: flex;
         flex-basis: 100%; /* width: 100% */
         justify-content: center;
@@ -156,3 +168,4 @@
         }
     }
 }
+
